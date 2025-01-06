@@ -24,7 +24,7 @@ function Login() {
             password: password
         };
 
-        const res = await fetch("http://localhost:3003/login", {
+        const res = await fetch("https://e-commerce-rho-five-45.vercel.app/login", {
             method: "POST",
             body: JSON.stringify(logindetails),
             headers: {
