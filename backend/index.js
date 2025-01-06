@@ -19,6 +19,9 @@ async function main() {
   console.log("mongodb is conneted")
 };
 
+app.get("/",(req,res)=>{
+res.send("Hello");
+)};
 app.get("/item",async(req,res)=>{
     const items = await itemModel.find();
      res.json(items);
