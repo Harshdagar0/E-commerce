@@ -9,7 +9,7 @@ const Products = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await fetch('http://localhost:3003/item');
+        const res = await fetch('https://e-commerce-rho-five-45.vercel.app/item');
         const data = await res.json();
         setfiltered(data);
 
