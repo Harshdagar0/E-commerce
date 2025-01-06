@@ -32,7 +32,7 @@ function Register() {
         email: email,
         password: password,
       };
-        const response = await fetch('http://localhost:3003/register',{
+        const response = await fetch('https://e-commerce-rho-five-45.vercel.app/register',{
         method:'POST',
         body:JSON.stringify(userInfo),
         headers:{
