@@ -8,7 +8,7 @@ function  FeatureProduct() {
     useEffect(() => {
         const fetchdata = async () => {
             try {
-                const res = await fetch('http://localhost:3003/item');
+                const res = await fetch('https://e-commerce-rho-five-45.vercel.app/item');
                 const data = await res.json();
                 let i = 0;
                 for (i = 0; i < data.length; i++) {
