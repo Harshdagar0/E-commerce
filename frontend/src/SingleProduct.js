@@ -9,7 +9,7 @@ const SingleProduct = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await fetch('http://localhost:3003/item');
+        const res = await fetch('https://e-commerce-rho-five-45.vercel.app/item');
         const data = await res.json();
         let i = 0;
         for (i = 0; i < data.length; i++) {
@@ -41,7 +41,7 @@ const send = async (e) => {
   nevegate("/cart");
   const email = logindeails.email;
 
-  const res = await fetch("http://localhost:3003/data", {
+  const res = await fetch("https://e-commerce-rho-five-45.vercel.app/data", {
     method: "POST",
     body: JSON.stringify({color:proCol,qu:proQu,name:filtered[0].name,price:filtered[0].price,image:filtered[0].image,email:email}),
     headers:{
