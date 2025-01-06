@@ -14,7 +14,7 @@ const Cart = () => {
     if(logindata){
       const fetchdata = async () => {
         try {
-          const res = await fetch('http://localhost:3003/send',{
+          const res = await fetch('https://e-commerce-rho-five-45.vercel.app/send',{
             method: "POST",
             body: JSON.stringify({logindata} ),
             headers:{
@@ -37,7 +37,7 @@ const Cart = () => {
   const Delete = async (e) => {
     e.preventDefault();
     let id = e.target.value;
-    const res = await fetch("http://localhost:3003/delete", {
+    const res = await fetch("https://e-commerce-rho-five-45.vercel.app/delete", {
       method: "POST",
       body: JSON.stringify( {id:id}),
       headers:{
